@@ -23,7 +23,7 @@ const spec = JSON.parse(fs.readFileSync(specPath, "utf-8"));
 const BASE = path.dirname(specPath);
 
 const FONT = spec.font || "맑은 고딕";
-const BAR = spec.barColor || "3F9B3F";               // MedPark Green
+const BAR = spec.barColor || "4CB748";               // MedPark Green (IFU 헤더에서 추출한 값)
 const COL = { mod: "C00000", prop: "1F5FBF", chk: "D26A00", ref: "6B7280" };
 const CATNAME = { mod: "코멘트 반영", prop: "수정 제안", chk: "확인·보완 필요", ref: "표기 정리" };
 const DEFAULT_FOOT = "※ 마킹에 없던 제안·초안입니다. 승인 전 확정 아님.";
